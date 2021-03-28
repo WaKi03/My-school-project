@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/project"
+	android:gravity="top|center"
+	android:orientation="vertical">
+
+	<TableLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:padding="60dp"
+		android:paddingTop="60dp">
+
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			tools:background="@android:color/background_light">
+
+			<TextView
+				android:id="@+id/textView3"
+				android:layout_width="62dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:gravity="center"
+				android:saveEnabled="false"
+				android:text="Дано:"
+				android:textColor="@android:color/holo_purple"
+				android:textEditSuggestionItemLayout="@android:drawable/btn_dialog"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				tools:targetApi="ice_cream_sandwich" />
+
+			<TextView
+				android:id="@+id/textView4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="3"
+				android:padding="10dp"
+				android:saveEnabled="false"
+				android:text="Решение"
+				android:textColor="@android:color/holo_purple"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				tools:targetApi="ice_cream_sandwich" />
+
+		</TableRow>
+
+		<TableRow
+			android:layout_height="wrap_content"
+			android:gravity="top">
+
+			<TableLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1">
+
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textView"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp"
+						android:saveEnabled="false"
+						android:text="V = "
+						android:textColor="@android:color/darker_gray"
+						android:textSize="18sp"
+						android:textStyle="bold" />
+
+					<EditText
+						android:id="@+id/vText"
+						android:layout_width="100dp"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp"
+						android:ems="10"
+						android:inputType="textPersonName"
+						android:text="начальная скорость"
+						android:textColor="@android:color/darker_gray"
+						android:textSize="18sp" />
+				</TableRow>
+
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textView2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp"
+						android:saveEnabled="false"
+						android:text="t  = "
+						android:textColor="@android:color/darker_gray"
+						android:textSize="18sp"
+						android:textStyle="bold" />
+
+					<EditText
+						android:id="@+id/tText"
+						android:layout_width="100dp"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp"
+						android:ems="10"
+						android:inputType="textPersonName"
+						android:text="время"
+						android:textColor="@android:color/darker_gray"
+						android:textSize="18sp" />
+				</TableRow>
+
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textView5"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp"
+						android:saveEnabled="false"
+						android:text="a  = "
+						android:textColor="@android:color/darker_gray"
+						android:textSize="18sp"
+						android:textStyle="bold" />
+
+					<EditText
+						android:id="@+id/aText"
+						android:layout_width="100dp"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp"
+						android:ems="10"
+						android:inputType="textPersonName"
+						android:text="ускорение"
+						android:textColor="@android:color/darker_gray"
+						android:textSize="18sp" />
+				</TableRow>
+
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textView6"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp"
+						android:saveEnabled="false"
+						android:text="s =  "
+						android:textColor="@android:color/darker_gray"
+						android:textSize="18sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/sText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp"
+						android:saveEnabled="false"
+						android:text="<неизвестноЮ"
+						android:textColor="@android:color/darker_gray"
+						android:textSize="18sp" />
+				</TableRow>
+			</TableLayout>
+
+			<ImageView
+				android:id="@+id/imageView"
+				android:layout_width="100dp"
+				android:layout_height="50dp"
+				android:layout_margin="5dp"
+				android:src="@drawable/hello_html_m1b559bc9" />
+
+		</TableRow>
+
+	</TableLayout>
+
+	<Button
+		android:id="@+id/resButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background_normal"
+		android:padding="10dp"
+		android:text="Решить"
+		android:textColor="@android:color/holo_purple"
+		android:textSize="30sp"
+		android:textStyle="bold"
+		tools:targetApi="ice_cream_sandwich" />
+
+	<Button
+		android:id="@+id/button2"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:background="@android:drawable/ic_delete"
+		android:rotation="-10"
+		android:translationX="100dp" />
+</LinearLayout>
+
