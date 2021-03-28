@@ -8,6 +8,27 @@
 	android:gravity="top|center"
 	android:orientation="vertical">
 
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="100px"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/textView9"
+			android:layout_width="269dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:shadowDx="20px"
+			android:shadowDy="20px"
+			android:shadowRadius="20px"
+			android:text="Решение задач"
+			android:textAllCaps="false"
+			android:textColor="@android:color/background_light"
+			android:textSize="30sp" />
+	</LinearLayout>
+
 	<TableLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -31,8 +52,7 @@
 				android:text="Дано:"
 				android:textColor="@android:color/holo_purple"
 				android:textSize="18sp"
-				android:textStyle="bold"
-				tools:targetApi="ice_cream_sandwich" />
+				android:textStyle="bold" />
 
 			<TextView
 				android:id="@+id/textView4"
@@ -44,8 +64,7 @@
 				android:text="Решение"
 				android:textColor="@android:color/holo_purple"
 				android:textSize="18sp"
-				android:textStyle="bold"
-				tools:targetApi="ice_cream_sandwich" />
+				android:textStyle="bold" />
 
 		</TableRow>
 
@@ -69,13 +88,13 @@
 						android:layout_marginLeft="10dp"
 						android:layout_marginRight="10dp"
 						android:saveEnabled="false"
-						android:text="V = "
+						android:text="v0 = "
 						android:textColor="@android:color/darker_gray"
 						android:textSize="18sp"
 						android:textStyle="bold" />
 
 					<EditText
-						android:id="@+id/vText"
+						android:id="@+id/editText"
 						android:layout_width="100dp"
 						android:layout_height="wrap_content"
 						android:layout_marginLeft="10dp"
@@ -104,7 +123,7 @@
 						android:textStyle="bold" />
 
 					<EditText
-						android:id="@+id/tText"
+						android:id="@+id/editText2"
 						android:layout_width="100dp"
 						android:layout_height="wrap_content"
 						android:layout_marginLeft="10dp"
@@ -133,7 +152,7 @@
 						android:textStyle="bold" />
 
 					<EditText
-						android:id="@+id/aText"
+						android:id="@+id/editText3"
 						android:layout_width="100dp"
 						android:layout_height="wrap_content"
 						android:layout_marginLeft="10dp"
@@ -162,7 +181,7 @@
 						android:textStyle="bold" />
 
 					<TextView
-						android:id="@+id/sText"
+						android:id="@+id/textView7"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:layout_marginLeft="10dp"
@@ -186,7 +205,7 @@
 	</TableLayout>
 
 	<Button
-		android:id="@+id/resButton"
+		android:id="@+id/button"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:background="@android:drawable/editbox_background_normal"
@@ -194,15 +213,6 @@
 		android:text="Решить"
 		android:textColor="@android:color/holo_purple"
 		android:textSize="30sp"
-		android:textStyle="bold"
-		tools:targetApi="ice_cream_sandwich" />
-
-	<Button
-		android:id="@+id/button2"
-		android:layout_width="30dp"
-		android:layout_height="30dp"
-		android:background="@android:drawable/ic_delete"
-		android:rotation="-10"
-		android:translationX="10dp"/>
+		android:textStyle="bold" />
 </LinearLayout>
 
